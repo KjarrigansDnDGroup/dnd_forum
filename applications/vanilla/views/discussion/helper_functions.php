@@ -149,10 +149,6 @@ if (!function_exists('writeComment')) :
                         $Sender->fireEvent('InsideCommentMeta'); // DEPRECATED
                         $Sender->fireEvent('AfterCommentMeta'); // DEPRECATED
 
-                        // Include IP Address if we have permission
-                        if ($Session->checkPermission('Garden.PersonalInfo.View')) {
-                            echo wrap(ipAnchor($Comment->InsertIPAddress), 'span', array('class' => 'MItem IPAddress'));
-                        }
                         ?>
                     </div>
                 </div>

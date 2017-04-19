@@ -30,6 +30,9 @@ class HtmLawedPlugin extends Gdn_Plugin {
         'AlignRight',
         'CodeBlock',
         'CodeInline',
+        'DndUt',
+        'DndCc',
+        'DndCs',
         'P',
         'post-clear-both',
         'post-clear-left',
@@ -132,6 +135,10 @@ class HtmLawedPlugin extends Gdn_Plugin {
         'pre',
         'span',
         'strong',
+        'table',
+        'td',
+        'th',
+        'tr',
         'ul'
     ];
 

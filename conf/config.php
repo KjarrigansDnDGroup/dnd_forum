@@ -14,7 +14,7 @@ $Configuration['EnabledApplications']['Conversations'] = 'conversations';
 $Configuration['EnabledApplications']['Vanilla'] = 'vanilla';
 
 // EnabledPlugins
-$Configuration['EnabledPlugins']['GettingStarted'] = 'GettingStarted';
+$Configuration['EnabledPlugins']['GettingStarted'] = false;
 $Configuration['EnabledPlugins']['HtmLawed'] = 'HtmLawed';
 $Configuration['EnabledPlugins']['cleditor'] = false;
 $Configuration['EnabledPlugins']['ButtonBar'] = true;
@@ -23,6 +23,7 @@ $Configuration['EnabledPlugins']['FileUpload'] = false;
 $Configuration['EnabledPlugins']['editor'] = true;
 $Configuration['EnabledPlugins']['AllViewed'] = true;
 $Configuration['EnabledPlugins']['PrivateCommunity'] = true;
+$Configuration['EnabledPlugins']['Quotes'] = true;
 
 // Garden
 $Configuration['Garden']['Title'] = 'D&D - Alte Männer';
@@ -38,10 +39,18 @@ $Configuration['Garden']['Registration']['InviteRoles']['4'] = '0';
 $Configuration['Garden']['Registration']['InviteRoles']['8'] = '0';
 $Configuration['Garden']['Registration']['InviteRoles']['32'] = '-1';
 $Configuration['Garden']['Registration']['InviteRoles']['16'] = '-1';
-$Configuration['Garden']['Email']['SupportName'] = 'Alte Männer';
-$Configuration['Garden']['Email']['Format'] = 'text';
+$Configuration['Garden']['Email']['SupportName'] = 'D&D - Forum';
+$Configuration['Garden']['Email']['Format'] = 'html';
+$Configuration['Garden']['Email']['SupportAddress'] = 'dnd@kjarrigan.de';
+$Configuration['Garden']['Email']['UseSmtp'] = false;
+$Configuration['Garden']['Email']['SmtpHost'] = '';
+$Configuration['Garden']['Email']['SmtpUser'] = '';
+$Configuration['Garden']['Email']['SmtpPassword'] = '';
+$Configuration['Garden']['Email']['SmtpPort'] = '25';
+$Configuration['Garden']['Email']['SmtpSecurity'] = '';
+$Configuration['Garden']['Email']['OmitToName'] = false;
 $Configuration['Garden']['SystemUserID'] = 1;
-$Configuration['Garden']['InputFormatter'] = 'Markdown';
+$Configuration['Garden']['InputFormatter'] = 'Wysiwyg';
 $Configuration['Garden']['Version'] = '2.3';
 $Configuration['Garden']['Cdns']['Disable'] = false;
 $Configuration['Garden']['CanProcessImages'] = true;
@@ -55,13 +64,20 @@ $Configuration['Garden']['EditContentTimeout'] = '-1';
 $Configuration['Garden']['HomepageTitle'] = 'D&D - Alte Männer';
 $Configuration['Garden']['Description'] = 'Jeden zweiten Dienstag im Monat ziehen die Helden mutig in die Schlacht für Ruhm und Ehre!!!';
 $Configuration['Garden']['PrivateCommunity'] = true;
+$Configuration['Garden']['EmailTemplate']['TextColor'] = '#333333';
+$Configuration['Garden']['EmailTemplate']['BackgroundColor'] = '#eeeeee';
+$Configuration['Garden']['EmailTemplate']['ContainerBackgroundColor'] = '#ffffff';
+$Configuration['Garden']['EmailTemplate']['ButtonTextColor'] = '#ffffff';
+$Configuration['Garden']['EmailTemplate']['ButtonBackgroundColor'] = '#38abe3';
 
 // Plugins
 $Configuration['Plugins']['GettingStarted']['Dashboard'] = '1';
 $Configuration['Plugins']['GettingStarted']['Categories'] = '1';
 $Configuration['Plugins']['GettingStarted']['Plugins'] = '1';
 $Configuration['Plugins']['GettingStarted']['Registration'] = '1';
-$Configuration['Plugins']['editor']['ForceWysiwyg'] = false;
+$Configuration['Plugins']['GettingStarted']['Discussion'] = '1';
+$Configuration['Plugins']['GettingStarted']['Profile'] = '1';
+$Configuration['Plugins']['editor']['ForceWysiwyg'] = '';
 
 // Routes
 $Configuration['Routes']['DefaultController'] = array('categories', 'Internal');
@@ -82,4 +98,4 @@ $Configuration['Vanilla']['Categories']['DoHeadings'] = '1';
 $Configuration['Vanilla']['Categories']['HideModule'] = false;
 $Configuration['Vanilla']['Categories']['Layout'] = 'modern';
 
-// Last edited by Gwyneth (95.90.214.183)2017-01-01 13:30:56
+// Last edited by Hurz (132.187.191.4)2017-03-22 08:59:23

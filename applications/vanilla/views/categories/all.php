@@ -72,9 +72,6 @@ foreach ($this->data('Categories') as $CategoryRow) {
                      <span class="MItem RSS">'.anchor(img('applications/dashboard/design/images/rss.gif', array('alt' => T('RSS Feed'))), '/categories/'.$Category->UrlCode.'/feed.rss', '', array('title' => T('RSS Feed'))).'</span>
                      <span class="MItem DiscussionCount">'.
                      sprintf(PluralTranslate($Category->CountDiscussions, '%s discussion html', '%s discussions html', t('%s discussion'), t('%s discussions')), BigPlural($Category->CountDiscussions, '%s discussion'))
-                     .'</span>
-                     <span class="MItem CommentCount">'.
-                     sprintf(PluralTranslate($Category->CountComments, '%s comment html', '%s comments html', t('%s comment'), t('%s comments')), BigPlural($Category->CountComments, '%s comment'))
                      .'</span>';
             if ($Category->LastTitle != '') {
                 $CatList .= '<span class="MItem LastDiscussionTitle">'.sprintf(

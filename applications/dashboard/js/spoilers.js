@@ -33,7 +33,7 @@ var spoilers = {
 
         var title = document.createElement("div");
         title.className = "SpoilerTitle";
-        title.innerHTML = gdn.definition("Spoiler", "Spoiler");
+        title.innerHTML = "" // gdn.definition("Spoiler", "Spoiler");
 
         var reveal = document.createElement("div");
         reveal.className = "SpoilerReveal";

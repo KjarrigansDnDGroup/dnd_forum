@@ -5,3 +5,39 @@
 .ItemDiscussion .Message {
   font-size: 100%;
 }
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th {
+  background: #1e79a7;
+  border: 1px solid #1e79a7;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+}
+
+table td {
+  border: 1px solid #1e79a7;
+  padding: 5px;
+}
+
+.Item.Read {
+  opacity: 1;
+  background: none;
+}
+
+.Item.Read .Title, .Item.Read .BlockTitle {
+  font-weight: normal;
+}
+
+.centered {
+  text-align: center;
+}
+
+div.Spoiler div.SpoilerText {
+  border: none;
+}
